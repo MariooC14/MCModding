@@ -1,4 +1,9 @@
 {
   "item.learningmod.sapphire": "Sapphire",
-  "item.learningmod.raw_sapphire": "Raw Sapphire"
+  "item.learningmod.raw_sapphire": "Raw Sapphire",
+
+  "block.learningmod.sapphire_block": "Block of Sapphire",
+  "block.learningmod.raw_sapphire_block": "Block of Raw Sapphire",
+
+  "creativetab.learning_tab": "Sapphire Learning Tab"
 }

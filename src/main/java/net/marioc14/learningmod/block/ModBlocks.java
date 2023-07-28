@@ -20,8 +20,11 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, LearningMod.MOD_ID);
 
     public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block",
-            //.copy() is used for copying properties of another block.
-            // you can use .of() instead to make your own properties
+            //.copy() is used for copying properties of another block. You can use .of() instead to make your own properties
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+                    .sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> RAW_SAPPHIRE_BLOCK = registerBlock("raw_sapphire_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
                     .sound(SoundType.AMETHYST)));
 

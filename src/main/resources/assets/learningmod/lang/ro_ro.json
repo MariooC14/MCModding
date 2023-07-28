@@ -1,4 +1,6 @@
 {
   "item.learningmod.sapphire": "Safir",
-  "item.learningmod.raw_sapphire": "Safir Brut"
+  "item.learningmod.raw_sapphire": "Safir Brut",
+
+  "block.learningmod.sapphire_block": "Bloc de Safir"
 }
