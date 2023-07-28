@@ -1,6 +1,7 @@
 package net.marioc14.learningmod;
 
 import com.mojang.logging.LogUtils;
+import net.marioc14.learningmod.item.ModCreativeModeTabs;
 import net.marioc14.learningmod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -27,6 +28,9 @@ public class LearningMod {
     public LearningMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        // Add in custom creative mode tabs
+        ModCreativeModeTabs.register(modEventBus);
+
         // Make the ModItems hop onto the eventBus, to add the items to minecraft
         ModItems.register(modEventBus);
 
@@ -40,7 +44,7 @@ public class LearningMod {
 
     }
 
-    // Add the example block item to the building blocks tab
+    // Add the items to the creative tabs
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SAPPHIRE);
