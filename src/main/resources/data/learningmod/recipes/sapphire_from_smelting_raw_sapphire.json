@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 20,
+  "experience": 0.7,
+  "group": "sapphire",
+  "ingredient": {
+    "item": "learningmod:raw_sapphire"
+  },
+  "result": "learningmod:sapphire"
+}
