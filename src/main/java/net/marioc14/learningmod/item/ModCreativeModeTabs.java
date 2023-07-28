@@ -1,6 +1,7 @@
 package net.marioc14.learningmod.item;
 
 import net.marioc14.learningmod.LearningMod;
+import net.marioc14.learningmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -24,6 +25,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SAPPHIRE.get());
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());
                         pOutput.accept(Items.DIAMOND);
+                        pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                     }))
                     .build());
 

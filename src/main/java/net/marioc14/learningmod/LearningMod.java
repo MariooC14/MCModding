@@ -1,6 +1,7 @@
 package net.marioc14.learningmod;
 
 import com.mojang.logging.LogUtils;
+import net.marioc14.learningmod.block.ModBlocks;
 import net.marioc14.learningmod.item.ModCreativeModeTabs;
 import net.marioc14.learningmod.item.ModItems;
 import net.minecraft.client.Minecraft;
@@ -33,6 +34,7 @@ public class LearningMod {
 
         // Make the ModItems hop onto the eventBus, to add the items to minecraft
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
