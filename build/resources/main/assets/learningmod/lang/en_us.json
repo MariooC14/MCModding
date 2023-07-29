@@ -1,9 +1,15 @@
 {
   "item.learningmod.sapphire": "Sapphire",
   "item.learningmod.raw_sapphire": "Raw Sapphire",
+  "item.learningmod.metal_detector": "Metal Detector",
 
   "block.learningmod.sapphire_block": "Block of Sapphire",
   "block.learningmod.raw_sapphire_block": "Block of Raw Sapphire",
+
+  "block.learningmod.sapphire_ore": "Sapphire Ore",
+  "block.learningmod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+  "block.learningmod.nether_sapphire_ore": "Nether Sapphire Ore",
+  "block.learningmod.end_stone_sapphire_ore": "Endstone Sapphire ore",
 
   "creativetab.learning_tab": "Sapphire Learning Tab"
 }
