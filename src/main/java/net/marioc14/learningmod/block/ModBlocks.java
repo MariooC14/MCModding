@@ -2,6 +2,7 @@ package net.marioc14.learningmod.block;
 
 import net.marioc14.learningmod.LearningMod;
 import net.marioc14.learningmod.block.custom.SoundBlock;
+import net.marioc14.learningmod.block.custom.ZirconLampBlock;
 import net.marioc14.learningmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -33,9 +34,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SAPPHIRE_ORE = registerBlock("sapphire_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
-                    .strength(2f)
-                    .requiresCorrectToolForDrops(),
-                    UniformInt.of(3, 6)));
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
     public static final RegistryObject<Block> DEEPLSATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
@@ -48,6 +47,11 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
             () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> ZIRCON_LAMP_BLOCK = registerBlock("zircon_lamp",
+            () -> new ZirconLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_ORE)
+                    .strength(6f).requiresCorrectToolForDrops()
+                    .lightLevel(state -> state.getValue(ZirconLampBlock.LIT) ? 15 : 0)));
 
 
 // Helper methods for registering blocks to the game

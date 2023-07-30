@@ -36,6 +36,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
+                        pOutput.accept(ModBlocks.ZIRCON_LAMP_BLOCK.get());
+
 
                     }))
                     .build());
