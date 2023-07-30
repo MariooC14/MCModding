@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "learningmod:strawberry"
+    }
+  ],
+  "result": {
+    "item": "learningmod:strawberry_seeds",
+    "count": 1
+  }
+}

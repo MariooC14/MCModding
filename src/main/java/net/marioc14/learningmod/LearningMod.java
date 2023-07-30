@@ -5,6 +5,8 @@ import net.marioc14.learningmod.block.ModBlocks;
 import net.marioc14.learningmod.item.ModCreativeModeTabs;
 import net.marioc14.learningmod.item.ModItems;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -68,6 +70,9 @@ public class LearningMod {
         public static void onClientSetup(FMLClientSetupEvent event) {
             // Some client setup code
             LOGGER.info("OH hi!");
+            // Crop blocks are hollow inside with some textures, the line below makes sure the renderer does not fill
+            // in the blanks.
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.STRAWBERRY_CROP.get(), RenderType.cutout());
         }
     }
 }

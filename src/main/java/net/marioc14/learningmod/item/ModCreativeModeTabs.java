@@ -29,7 +29,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
                         pOutput.accept(ModItems.STRAWBERRY.get());
-
+                        pOutput.accept(ModItems.STRAWBERRY_SEEDS.get());
 
                         pOutput.accept(ModBlocks.SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.DEEPLSATE_SAPPHIRE_ORE.get());
@@ -37,7 +37,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.END_STONE_SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
                         pOutput.accept(ModBlocks.ZIRCON_LAMP_BLOCK.get());
-
 
                     }))
                     .build());

@@ -2,6 +2,7 @@ package net.marioc14.learningmod.block;
 
 import net.marioc14.learningmod.LearningMod;
 import net.marioc14.learningmod.block.custom.SoundBlock;
+import net.marioc14.learningmod.block.custom.StrawberryCropBlock;
 import net.marioc14.learningmod.block.custom.ZirconLampBlock;
 import net.marioc14.learningmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -52,6 +53,11 @@ public class ModBlocks {
             () -> new ZirconLampBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_ORE)
                     .strength(6f).requiresCorrectToolForDrops()
                     .lightLevel(state -> state.getValue(ZirconLampBlock.LIT) ? 15 : 0)));
+
+    // We are not using the registerBlock helper function as we do not want a crop block associated with this.
+    // Its associated item is the strawberry seed.
+    public static final RegistryObject<Block> STRAWBERRY_CROP = BLOCKS.register("strawberry_crop",
+            () -> new StrawberryCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
 
 // Helper methods for registering blocks to the game

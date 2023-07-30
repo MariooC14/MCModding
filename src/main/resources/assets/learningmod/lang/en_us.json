@@ -3,10 +3,13 @@
   "item.learningmod.raw_sapphire": "Raw Sapphire",
   "item.learningmod.metal_detector": "Metal Detector",
   "item.learningmod.strawberry": "Strawberry",
+  "item.learningmod.strawberry_seeds": "Strawberry Seeds",
+  "item.learningmod.strawberry_crop": "Strawberry Crop",
 
   "block.learningmod.sapphire_block": "Block of Sapphire",
   "block.learningmod.raw_sapphire_block": "Block of Raw Sapphire",
   "block.learningmod.sound_block": "Sound Block",
+  "block.learningmod.zircon_lamp": "Zircon Lamp",
 
   "block.learningmod.sapphire_ore": "Sapphire Ore",
   "block.learningmod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
