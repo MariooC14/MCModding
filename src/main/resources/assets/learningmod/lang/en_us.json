@@ -17,5 +17,7 @@
   "block.learningmod.nether_sapphire_ore": "Nether Sapphire Ore",
   "block.learningmod.end_stone_sapphire_ore": "Endstone Sapphire ore",
 
-  "creativetab.learning_tab": "Sapphire Learning Tab"
+  "creativetab.learning_tab": "Sapphire Learning Tab",
+
+  "tooltip.learningmod.metal_detector.tooltip": "Finds §cMetal underground"
 }

@@ -2,6 +2,7 @@ package net.marioc14.learningmod.item;
 
 import net.marioc14.learningmod.LearningMod;
 import net.marioc14.learningmod.block.ModBlocks;
+import net.marioc14.learningmod.item.custom.FuelItem;
 import net.marioc14.learningmod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
@@ -33,6 +34,9 @@ public class ModItems {
     public static final RegistryObject<Item> STRAWBERRY_SEEDS = ITEMS.register("strawberry_seeds",
             () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_CROP.get(),
                     new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> CLOVER = ITEMS.register("clover",
+            () -> new FuelItem(new Item.Properties(), 200));
 
 
     // This is the function used by the main mod manager to load the items to minecraft.
